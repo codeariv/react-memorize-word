@@ -38,7 +38,6 @@ function App() {
 
   let generateRandomPosition = (generatedRandomWords) => {
     let maxPosition = generatedRandomWords.length;
-    console.log(maxPosition, "lll");
     let randomWordPosition = rn({
       min: 1,
       max: maxPosition,
@@ -57,6 +56,7 @@ function App() {
     }
     setAnswered(true);
   };
+
   return (
     <div className="App">
       <Header />
